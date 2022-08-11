@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --textcolor: #212121;
+    --secondarycolor: #757575;
+    --button-color: #F5F4FA;
+    --maincolor: #2196F3;
+    --bgcolor: #ffffff;
+    --transp-white: #ffffffae;
+    --box-border-color:#EEEEEE;
+  }
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--textcolor);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--bgcolor);
+
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    color: var(--textcolor);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.contacts-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.web-studio-logo {
+    margin-right: 40px;
+    font-family: Raleway;
+    color: var(--textcolor);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.web-studio-logo:hover, 
+.web-studio-logo:focus {
+    color: var(--textcolor);
+}
+
+.contacts {
+    font-weight: 500;
+    color: var(--secondarycolor);
+}
+
+.contacts :hover, 
+.contacts :focus {
+    color: var(--maincolor);
+}
+
+.nav_color {
+    color: var(--maincolor);
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+margin-right: 40px;
+}
+
+.contacts-nav .contacts:not(:last-child) {
+    margin-right: 50px;
+    }
+
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+a {
+    color: var(--textcolor);
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: var(--maincolor);
+}
+
+.section {
+    padding: 94px 0 94px 0;
+}
+
+.cover-section {
+    padding: 200px;
+    text-align: center;
+    min-height: 600px;
+    background-color: var(--textcolor);
+}
+
+.our-work {
+    min-height: 387px;
+}
+
+.reset-pedding {
+padding-top: 0;
+}
+
+.details-wrapper {
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-elements {
+    font-size: 0;
+    height: 404px;
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: var(--bgcolor);
+}
+
+
+.flex-elements:nth-child(3n) {
+    margin-right: 0;
+}
+
+.flex-elements:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;    
+    margin-right: 30px;
+    margin-bottom: 94px;
+}
+
+.card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.card:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+
+.border-shadow {
+    height: 110px;
+    border: 1px solid var(--box-border-color);
+}
+
+/* section Наша команда */
+.jobs-title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--textcolor);
+}
+
+.teams {
+    display: flex;
+}
+
+.teams-item {
+    width: 270px;
+    height: 368px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    background:var(--bgcolor);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.fon-our-teams {
+    /* padding-top: 94px; */
+    height: 648px;
+    background-color:var(--button-color);
+}
+
+
+
+.teams-item:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+}
+
+.card-buttons {
+    justify-content: center;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jobs-wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.btn-portfolio {
+    font-family: 'Roboto';
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 8px;
+    height: 38px;
+    width: 125px;
+    background-color: var(--button-color);
+    color: var(--textcolor);
+    border-width: 0px;
+    border-style:none;
+    border-color: buttonborder;
+    cursor: pointer;
+}
+
+
+.btn-portfolio:focus {
+    background-color: var(--maincolor);
+    color: var(--bgcolor);
+}
+
+.btn-portfolio:hover {
+    background-color: var(--maincolor);
+    color: var(--bgcolor);
+}
+
+.btn-studio {
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px; 
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,9;
+    width: 216px;
+    height: 50px;
+    background-color: var(--maincolor);
+    color: var(--bgcolor);
+    border-color: buttonborder;
+    border-width: 0px;
+    border-style: none;
+}
+
+.btn-studio:focus {
+    background-color: var(--secondarycolor);
+    color: var(--bgcolor);
+}
+
+.btn-studio:hover {
+    background-color: var(--secondarycolor);
+    color: var(--bgcolor);
+}
+
+.studio-title {
+    /* width: 696px; */
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bgcolor);
+}
+
+
+.details {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--textcolor);
+}
+
+.details-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.details-items-body {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--secondarycolor);
+}
+
+.details-descr {
+    margin-top: 10px;
+    line-height: 24px;
+    color: var(--secondarycolor);
+}
+
+
+.name {
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+    color: var(--textcolor);
+}
+
+.position {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1,19;
+    color: var(--secondarycolor);
+}
+
+
+.example-work {
+    margin-left: 24px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.example-descr {
+    margin-left: 24px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1,9;
+    color: var(--secondarycolor);
+}
+
+
+.jobs-title {
+    /* padding-top: 94px; */
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 50px;
+    /* margin-top: 94px; */
+    /* margin-bottom: 50px; */
+    font-family: 'Roboto';
+    font-size: 36px;
+    line-height: 1.19;
+}
+
+.footer-info-color {
+    /* margin-top: 9px;
+    margin-bottom: 9px; */
+    color: var(--transp-white);
+}
+
+.footer-fon {
+    padding-top: 60px;
+    height: 252px;
+    background-color:var(--textcolor);
+}
+.button-adress {
+    color:var(--button-color);
+}
+
+.footer-item {
+    margin-top: 15px;
+}
