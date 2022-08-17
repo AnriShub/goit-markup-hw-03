@@ -9,146 +9,161 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header class="page-header">
-        <nav class="container main-nav">
-            <a href="./index.html" class="web-studio-logo">
-                <span style="color:#2196F3">Web</span>Studio
-            </a>
-            <ul class="site-nav list">
-                <li class="item"> <a href="./index.html" class="link">Студія</a></li>
-                <li class="item"> <a href="./portfolio.html" class="link nav_color">Портфоліо</a></li>
-                <li class="item"> <a href="" class="link">Контакти</a></li>
-            </ul>
-            <ul class="contacts-nav">
-                <li class="contacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="contacts"><a href="tel:+380961111111">+8 (096) 111-11-11</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="./index.html" class="web-studio-logo">
+                    <span style="color:#2196F3">Web</span>Studio
+                </a>
+                <ul class="site-nav list">
+                    <li class="item"> <a href="./index.html" class="link">Студія</a></li>
+                    <li class="item"> <a href="./portfolio.html" class="link nav_color">Портфоліо</a></li>
+                    <li class="item"> <a href="" class="link">Контакти</a></li>
+                </ul>
+                <ul class="contacts-nav">
+                    <li class="contacts"><a href="mailto:info@devstudio.com"
+                            class="nav-sec-color">info@devstudio.com</a></li>
+                    <li class="contacts"><a href="tel:+380961111111" class="nav-sec-color">+8 (096) 111-11-11</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="section container">
+        <section class="section">
             <h1 hidden>Портфоліо</h1>
-            <ul class="card-buttons">
-                <li><button type="button" class="btn-portfolio">Все</button> </li>
-                <li><button type="button" class="btn-portfolio">Веб-сайти</button> </li>
-                <li><button type="button" class="btn-portfolio">Додатки</button> </li>
-                <li><button type="button" class="btn-portfolio">Дизайн</button> </li>
-                <li><button type="button" class="btn-portfolio">Маркетинг</button> </li>
-            </ul>
+            <div class="container">
 
-            <ul class="card">
-                <div class="flex-elements">
-                    <li>
-                        <img src="./images/portfolio/img(4).jpg" alt="Технокряк">
-                        <div class="border-shadow">
-                            <h2 class="example-work">Технокряк</h2>
-                            <p class="example-descr">Веб-сайт</p>
-                        </div>
+                <ul class="card-buttons">
+                    <li><button type="button" class="btn-portfolio">Все</button> </li>
+                    <li><button type="button" class="btn-portfolio">Веб-сайти</button> </li>
+                    <li><button type="button" class="btn-portfolio">Додатки</button> </li>
+                    <li><button type="button" class="btn-portfolio">Дизайн</button> </li>
+                    <li><button type="button" class="btn-portfolio">Маркетинг</button> </li>
+                </ul>
 
-                    </li>
-                </div>
+                <ul class="card">
+                    <div class="flex-elements">
+                        <li>
+                            <img src="./images/portfolio/img(4).jpg" alt="Технокряк">
+                            <div class="border-shadow">
+                                <h2 class="example-work">Технокряк</h2>
+                                <p class="example-descr">Веб-сайт</p>
+                            </div>
 
-                <div class="flex-elements">
-                    <li>
-                        <img src="./images/portfolio/img(5).jpg" alt="Постер New Orlean vs Golden Star">
-                        <div class="border-shadow">
-                            <h2 class="example-work">Постер New Orlean vs Golden Star</h2>
-                            <p class="example-descr">Дизайн</p>
-                        </div>
-                    </li>
-                </div>
+                        </li>
+                    </div>
 
-                <div class="flex-elements">
-                    <li>
-                        <img src="./images/portfolio/img(6).jpg" alt="Ресторан Seafood">
-                        <div class="border-shadow">
-                            <h2 class="example-work">Ресторан Seafood</h2>
-                            <p class="example-descr">Додаток</p>
-                        </div>
-                    </li>
-                </div>
+                    <div class="flex-elements">
+                        <li>
+                            <img src="./images/portfolio/img(5).jpg" alt="Постер New Orlean vs Golden Star">
+                            <div class="border-shadow">
+                                <h2 class="example-work">Постер New Orlean vs Golden Star</h2>
+                                <p class="example-descr">Дизайн</p>
+                            </div>
+                        </li>
+                    </div>
 
-                <div class="flex-elements">
-                    <li>
-                        <img src="./images/portfolio/img(7).jpg" alt="Проєкт Prime">
-                        <div class="border-shadow">
-                            <h2 class="example-work">Проєкт Prime</h2>
-                            <p class="example-descr">Маркетинг</p>
-                        </div>
-                    </li>
-                </div>
+                    <div class="flex-elements">
+                        <li>
+                            <img src="./images/portfolio/img(6).jpg" alt="Ресторан Seafood">
+                            <div class="border-shadow">
+                                <h2 class="example-work">Ресторан Seafood</h2>
+                                <p class="example-descr">Додаток</p>
+                            </div>
+                        </li>
+                    </div>
 
-                <div class="flex-elements">
-                    <li>
-                        <img src="./images/portfolio/img(8).jpg" alt="Проєкт Boxes">
-                        <div class="border-shadow">
-                            <h2 class="example-work">Проєкт Boxes</h2>
-                            <p class="example-descr">Додаток</p>
-                        </div>
-                    </li>
-                </div>
+                    <div class="flex-elements">
+                        <li>
+                            <img src="./images/portfolio/img(7).jpg" alt="Проєкт Prime">
+                            <div class="border-shadow">
+                                <h2 class="example-work">Проєкт Prime</h2>
+                                <p class="example-descr">Маркетинг</p>
+                            </div>
+                        </li>
+                    </div>
 
-                <div class="flex-elements">
-                    <li>
-                        <img src="./images/portfolio/img(9).jpg" alt="Inspiration has no Borders">
-                        <div class="border-shadow">
-                            <h2 class="example-work">Inspiration has no Borders</h2>
-                            <p class="example-descr">Веб-сайт</p>
-                        </div>
-                    </li>
-                </div>
+                    <div class="flex-elements">
+                        <li>
+                            <img src="./images/portfolio/img(8).jpg" alt="Проєкт Boxes">
+                            <div class="border-shadow">
+                                <h2 class="example-work">Проєкт Boxes</h2>
+                                <p class="example-descr">Додаток</p>
+                            </div>
+                        </li>
+                    </div>
 
-                <div class="flex-elements">
-                    <li>
-                        <img src="./images/portfolio/img(10).jpg" alt="Видання Limited Edition">
-                        <div class="border-shadow">
-                            <h2 class="example-work">Видання Limited Edition</h2>
-                            <p class="example-descr">Дизайн</p>
-                        </div>
-                    </li>
-                </div>
+                    <div class="flex-elements">
+                        <li>
+                            <img src="./images/portfolio/img(9).jpg" alt="Inspiration has no Borders">
+                            <div class="border-shadow">
+                                <h2 class="example-work">Inspiration has no Borders</h2>
+                                <p class="example-descr">Веб-сайт</p>
+                            </div>
+                        </li>
+                    </div>
 
-                <div class="flex-elements">
-                    <li>
-                        <img src="./images/portfolio/img(11).jpg" alt="Проект LAB">
-                        <div class="border-shadow">
-                            <h2 class="example-work">Проект LAB</h2>
-                            <p class="example-descr">Маркетинг</p>
-                        </div>
-                    </li>
-                </div>
+                    <div class="flex-elements">
+                        <li>
+                            <img src="./images/portfolio/img(10).jpg" alt="Видання Limited Edition">
+                            <div class="border-shadow">
+                                <h2 class="example-work">Видання Limited Edition</h2>
+                                <p class="example-descr">Дизайн</p>
+                            </div>
+                        </li>
+                    </div>
 
-                <div class="flex-elements">
-                    <li>
-                        <img src="./images/portfolio/img(12).jpg" alt="Growing Business">
-                        <div class="border-shadow">
-                            <h2 class="example-work">Growing Business</h2>
-                            <p class="example-descr">Додаток</p>
-                        </div>
-                    </li>
-                </div>
-            </ul>
+                    <div class="flex-elements">
+                        <li>
+                            <img src="./images/portfolio/img(11).jpg" alt="Проект LAB">
+                            <div class="border-shadow">
+                                <h2 class="example-work">Проект LAB</h2>
+                                <p class="example-descr">Маркетинг</p>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="flex-elements">
+                        <li>
+                            <img src="./images/portfolio/img(12).jpg" alt="Growing Business">
+                            <div class="border-shadow">
+                                <h2 class="example-work">Growing Business</h2>
+                                <p class="example-descr">Додаток</p>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
         </section>
     </main>
 
     <footer class="footer-fon">
-        <section class="container">
-            <a href="./index.html" class="web-studio-logo">
-                <span style="color:#2196F3">Web</span><span style="color:#ffffff">Studio</span>
-            </a>
-            <ul>
-                <li class="footer-item"><a class="button-adress" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li class="footer-item"><a href="mailto:info@example.com" class="footer-info-color">info@example.com</a>
-                </li>
-                <li class="footer-item"><a href="tel:+380961111111" class="footer-info-color">+8 (096) 111-11-11</a>
-                </li>
-            </ul>
-        </section>
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="./index.html" class="web-studio-logo">
+                    <span style="color:#2196F3">Web</span><span style="color:#ffffff">Studio</span>
+                </a>
+                <address>
+                    <ul class="addr">
+                        <li class="footer-item"><a class="button-adress" href="">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li class="footer-item"><a href="mailto:info@example.com"
+                                class="footer-info-color">info@example.com</a>
+                        </li>
+                        <li class="footer-item"><a href="tel:+380961111111" class="footer-info-color">+8 (096)
+                                111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
     </footer>
 
 </body>
