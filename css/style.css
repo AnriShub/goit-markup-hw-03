@@ -150,7 +150,6 @@ a:focus, a:hover {
 .cover-section {
     padding: 200px 0;
     text-align: center;
-    /* min-height: 600px; */
     background-color: var(--bg-color-fon);
 }
 
@@ -169,6 +168,14 @@ padding-top: 0;
 }
 
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========== PORTFOLIO CARD =========== */
 .card {
     display: flex;
     flex-wrap: wrap;  
@@ -176,12 +183,6 @@ padding-top: 0;
 
 .card:nth-child(3n) {
     margin-right: 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -210,14 +211,28 @@ ul {
 
 
 
-
 .border-shadow {
+    padding: 20px 24px 20px 24px;
     border-left: 1px solid var(--box-border-color);
     border-bottom: 1px solid var(--box-border-color);
     border-right: 1px solid var(--box-border-color);;
 }
 
-/* section Наша команда */
+.example-work {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.example-descr {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--secondarycolor);
+}
+
+
+/* =========== Наша команда ============ */
 .jobs-title {
     text-align: center;
     font-family: 'Roboto';
@@ -250,7 +265,6 @@ ul {
     height: 648px;
     background-color:var(--button-color);
 }
-
 
 
 .card-buttons {
@@ -380,7 +394,6 @@ ul {
 
 .name {
     display: block;
-    /* padding-top: 30px; */
     margin-top: 30px;
     text-align: center;
     font-family: 'Roboto';
@@ -403,29 +416,12 @@ ul {
 }
 
 
-.example-work {
-    padding: 20px 24px 4px;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-}
-
-.example-descr {
-    padding: 0px 24px 20px;
-    font-size: 16px;
-    line-height: 1.9;
-    color: var(--secondarycolor);
-}
-
 /* ============ FOOTER ============= */
 
 .footer-info-color {
     color: var(--transp-white);
 }
 
-.footer-wrapper {
-    padding-left: 15px;
-}
 
 .footer-fon {
     padding: 60px 0;
